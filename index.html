@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Todo app</title>
+  <style>
+    .todo-app .attribution { font-size: 11px; text-align: center; padding: 20px;}
+    .todo-app.dark .attribution {color: hsl(234, 39%, 85%);}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="todo-app light">
+    <div class="container">
+      <header>
+        <div class="logo">todo</div>
+        <img src="images/icon-sun.svg" data-theme="light" alt="icon-sun">
+        <img class="disponible" src="images/icon-moon.svg" data-theme="dark" alt="icon-moon">
+      </header>
+      <div class="nuevaTarea">
+        <span class="icon"></span>
+        <input type="text" name="todo" data-placeholder="Create a new todo..." placeholder="Create a new todo...">
+      </div>
+      <div class="todo-list">
+        <ul>
+        </ul>
+        <div class="botones">
+          <div class="itemsRestantes"><span class="number">5</span> items left</div>
+          <ul class="botonesFiltro">
+            <li class="seleccionado" data-filter="todo">All</li>
+            <li data-filter="active">Active</li>
+            <li data-filter="completed">Completed</li>
+          </ul>
+          <div class="botonLimpiarCompletados">Clear Completed</div>
+        </div>
+      </div>
+      <div class="note">Drag and drop to reorder list</div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/BraianGazano" target="_blank">Braian Gazano</a>.
+    </div>
+  </section>
+  <script src="js/main.js"></script>
+</body>
+</html>
