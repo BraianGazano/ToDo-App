@@ -39,8 +39,8 @@ Los usuarios serán capaces de:
 
 ### Links
 
-- URL Solución: [Todo App Main Frontend Mentor Solution](https://github.com/MohMostafa-Web/todo-app-main-frontend-mentor)
-- URL sitio desplegado: [Todo App Main Live Site](https://mohmostafa-web.github.io/todo-app-main-frontend-mentor/)
+- URL Solución: [Todo App Main Frontend Mentor Solution](https://github.com/BraianGazano/ToDo-App)
+- URL sitio desplegado: [Todo App Main Live Site](https://to-do-app-pkj02rxhk-braiangazano.vercel.app/)
 
 ## My process
 
