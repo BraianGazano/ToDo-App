@@ -1,15 +1,14 @@
-/* Start Variables */
 :root {
-/* Primary */
+/* Colores primarios */
 --primary-bright-blue: hsl(220, 98%, 61%);
 --primary-background: linear-gradient(125deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
-/* Light Theme */
+/* Tema claro */
 --lt-very-light-gray: hsl(0, 0%, 98%);
 --lt-very-light-grayish-blue: hsl(236, 33%, 92%);
 --lt-light-grayish-blue: hsl(233, 11%, 84%);
 --lt-dark-grayish-blue: hsl(236, 9%, 61%);
 --lt-very-dark-grayish-blue: hsl(235, 19%, 35%);
-/* Dark Theme */
+/* Tema oscuro */
 --dt-very-dark-blue: hsl(235, 21%, 11%);
 --dt-very-dark-desaturated-blue: hsl(235, 24%, 19%);
 --dt-light-grayish-blue: hsl(234, 39%, 85%);
@@ -18,8 +17,8 @@
 --dt-very-dark-grayish-blue: hsl(233, 14%, 35%);
 --dt-very-dark-grayish-blue: hsl(237, 14%, 26%);
 }
-/* End Variables */
-/* Start Global Rules */
+/* Fin de variables */
+/* Propiedades globales */
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -167,7 +166,6 @@ a {
   position: relative;
 }
 .todo-app .nuevaTarea::before {
-  content: 'Currently typing ';
   font-size: 18px;
   position: absolute;
   top: 50%;
@@ -285,7 +283,7 @@ a {
 .todo-app.dark .todo-list li.todo p {
   color: var(--dt-light-grayish-blue);
 }
-/* Start Todo Completed */
+/* Tarea completada */
 .todo-app .todo-list li.todo.completed p {
   text-decoration: line-through 1px;
 }
@@ -295,8 +293,8 @@ a {
 .todo-app.dark .todo-list li.todo.completed p {
   color: var(--dt-dark-grayish-blue);
 }
-/* End Todo Completed */
-/* Start Icons */
+/* Fin tarea completada */
+/* Icono de check */
 .todo-app .icon {
   width: 24px;
   height: 24px;
@@ -358,8 +356,8 @@ a {
 .todo-app.dark .todo:not(.completed) .icon:hover::after {
   background-color: var(--dt-very-dark-desaturated-blue);
 }
-/* End Icons */
-/* Start delete button */
+/* Fin icono de check */
+/* Boton eliminar*/
 .todo-app .todo-list li.todo .delete {
   position: absolute;
   top: 50%;
@@ -373,8 +371,8 @@ a {
     right: 20px;
   }
 }
-/* End delete button */
-/* Start Controls */
+/* Fin boton eliminar */
+/* Botones filtro */
 .todo-app .todo-list .botones {
   display: flex;
   padding: 20px;
@@ -432,23 +430,23 @@ a {
 .todo-app .todo-list .botones .botonLimpiarCompletados {
   cursor: pointer;
 }
-/* End Controls */
-/* Start Note */
-.todo-app .note {
+/* Fin botones filtro */
+/* Nota drag and drop */
+.todo-app .nota {
   padding-top: 60px;
   padding-bottom: 50px;
   text-align: center;
   font-size: 14px;
 }
 @media (max-width: 575px) {
-  .todo-app .note {
+  .todo-app .nota {
     padding-top: 120px;
   }
 }
-.todo-app.light .note {
+.todo-app.light .nota {
   color: var(--lt-dark-grayish-blue);
 }
-.todo-app.dark .note {
+.todo-app.dark .nota {
   color: var(--dt-dark-grayish-blue);
 }
-/* End Note */
+/* Fin nota */
