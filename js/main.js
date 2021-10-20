@@ -51,15 +51,14 @@ input.onfocus = function () {
   this.placeholder = "";
 };
 //Añado una nueva tarea
-input.onblur = function () {
-  if (this.value.trim() !== "") {
-    agregarTarea(this.value);
-    actualizarLocalStorage();
+input.addEventListener("keyup", function (e) {
+  if (e.code === 'Enter' && this.value.trim()!== "") { 
+      agregarTarea(this.value);
+      actualizarLocalStorage();
+      this.value = "";
+      this.placeholder = this.dataset.placeholder;
   }
-  this.value = "";
-  this.placeholder = this.dataset.placeholder;
-};
-
+});
 
 // 
 todoListUl.addEventListener("click", function (e) {
@@ -204,7 +203,6 @@ function actualizarLocalStorage() {
       localStorage.removeItem(key);
     }
   }
-
   // Almaceno las tareas 
   document.querySelectorAll(".todo-list .todo").forEach(todo => {
     let data = {
